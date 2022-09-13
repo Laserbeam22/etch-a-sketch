@@ -1,2 +1,2 @@
 const container = document.querySelector('#container');
-const square = document.createElement('div'); 
+const singleDiv = document.createElement('div'); 
