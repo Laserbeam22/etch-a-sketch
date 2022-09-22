@@ -14,9 +14,10 @@ function createDivs(num) {
   }
 }
 
-
 btn.addEventListener('click', function (e) {
-  
+  //resets child div amount to new given number 
+  container.replaceChildren();
+
   let num = getNum();
 
   function getNum() {
@@ -33,9 +34,3 @@ btn.addEventListener('click', function (e) {
   }
   createDivs(num);
 });
-
-
-
-//console.log(createDivs(num));
-
-
