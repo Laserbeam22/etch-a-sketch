@@ -19,7 +19,11 @@ body {
     /*above is for visual distinction*/
     display: grid;
     height: 95vh;
-    gap: 1px;
+    gap: 5px;
     aspect-ratio: 1/1;
     grid-template: repeat(16, 1fr)/repeat(16, 1fr);
+}
+
+.singleDiv {
+    background-color: paleturquoise;
 }
