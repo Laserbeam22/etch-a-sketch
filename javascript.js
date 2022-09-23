@@ -22,14 +22,14 @@ btn.addEventListener('click', function (e) {
 
   function getNum() {
 
-    let input = prompt("Choose a number from 3-100 for sketch dimensions.");
-    let notString = parseInt(input);
+    let input = prompt("Choose a number from 5-100 for the grid height/width.");
+    let notString = parseFloat(input);
     let squared = notString*notString;
     
-    if (Number.isInteger(notString) == true && notString >= 3 && notString <=100) {
-        return squared;
-    } else {
-        return("Error. Please choose a number from 3-100.");
+    if (Number.isInteger(notString) !== true || notString < 4 || notString > 100) {
+      alert("Error. Please choose a number from 4-100.");  
+    } else if (Number.isInteger(notString) == true) {
+      return squared;
     }
   }
   createDivs(num);
