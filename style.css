@@ -21,7 +21,7 @@ body {
     height: 95vh;
     gap: 5px;
     aspect-ratio: 1/1;
-    grid-template: repeat(16, 1fr)/repeat(16, 1fr);
+    grid-template: repeat( var(--repeatNumber) , 1fr)/ repeat( var(--repeatNumber) , 1fr);
 }
 
 .singleDiv {
