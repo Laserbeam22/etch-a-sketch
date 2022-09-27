@@ -25,7 +25,7 @@ btn.addEventListener('click', function (e) {
 
   function getNum() {
 
-    let input = prompt("Choose a number from 5-100 for the grid height/width.");
+    let input = prompt("Choose a number from 4-100 for the grid height/width.");
     let notString = parseFloat(input);
     let squared = notString*notString;
     const grid = document.getElementById('container');
