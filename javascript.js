@@ -10,7 +10,7 @@ function createDivs(num) {
   container.appendChild(dFrag);
   document.querySelectorAll('.singleDiv').forEach(item => {
     item.addEventListener('mouseenter', event => {
-      event.target.style.backgroundColor = 'rgb(70, 150, 231)';
+      event.target.style.backgroundColor = 'rgb(12 71 131)';
     })
   })
 }
@@ -45,3 +45,4 @@ reset.addEventListener('click', function () {
     child.style.backgroundColor = "paleturquoise";
   });
 })
+
