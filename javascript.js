@@ -5,7 +5,6 @@ function createDivs(num) {
   for (i = 0; i < num; i++) {
     const singleDiv = document.createElement('div');
     singleDiv.classList.add('singleDiv');
-    //container.appendChild(singleDiv);
     dFrag.appendChild(singleDiv);
   }
   container.appendChild(dFrag);
@@ -39,3 +38,10 @@ btn.addEventListener('click', function (e) {
   }
   createDivs(num);
 });
+
+reset.addEventListener('click', function () {  
+  const allChildren = document.querySelectorAll(".singleDiv");
+  allChildren.forEach(child => {
+    child.style.backgroundColor = "paleturquoise";
+  });
+})
